@@ -9,7 +9,7 @@
                 - connect the GPIO 13 to the xIN2 of the DRV8833 module
                 - connect the positive pole of the motor to the xOUT1 of the DRV8833 module
                 - connect the negative pole of the motor to the xOUT2 of the DRV8833 module
-                - power the DRV8833 board (if the motor is small - 5V and <500mA, you can power
+                - power the DRV8833 module (if the motor is small, 5V and <500mA, you can power
                   the module pulling the 5V and GND from the ESP32 board)
                 - load the sketch
                 - use the serial console to send commands
