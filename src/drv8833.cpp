@@ -7,7 +7,7 @@ Cdrv8833::Cdrv8833() {
 	m_in2Pin = -1;
 	m_power = 0;
 	m_swapDirection = false;
-	m_decayMode = drv8833DecayFast;
+	m_decayMode = drv8833DecaySlow;
 }
 
 Cdrv8833::Cdrv8833(uint8_t in1Pin, uint8_t in2Pin, uint8_t channel, bool swapDirection) {
@@ -30,7 +30,7 @@ bool Cdrv8833::init(uint8_t in1Pin, uint8_t in2Pin, uint8_t channel, bool swapDi
 	m_power = 0;
 	m_swapDirection = swapDirection;
 	m_channel = channel;
-	m_decayMode = drv8833DecayFast;
+	m_decayMode = drv8833DecaySlow;
 	ledcSetup(channel, PWM_FREQUENCY, PWM_BIT_RESOLUTION);
 	return true;
 }

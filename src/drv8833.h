@@ -20,10 +20,10 @@ enum drv8833DecayMode {
 
 class Cdrv8833 {
 public:
-	// default constructor. Default decay mode: FAST
+	// default constructor. Default decay mode: SLOW
 	Cdrv8833();
 
-	// Specialized constructor. Default decay mode: FAST
+	// Specialized constructor. Default decay mode: SLOW
 	// input:
 	//   in1Pin       : DRV8833 AIN1/BIN1  
 	//   in2Pin       : DRV8833 AIN2/BIN2
@@ -32,7 +32,7 @@ public:
 	Cdrv8833(uint8_t in1Pin, uint8_t in2Pin, uint8_t channel, bool swapDirection = false);
 	~Cdrv8833();
 
-	// Initialize the DRV8833 object. Default decay mode: FAST
+	// Initialize the DRV8833 object. Default decay mode: SLOW
 	// input:
 	//   in1Pin       : DRV8833 AIN1/BIN1  
 	//   in2Pin       : DRV8833 AIN2/BIN2
@@ -61,7 +61,7 @@ public:
 	//   true if no error occurs.
 	bool brake();
 
-	// Set the decay mode. Default decay mode: FAST
+	// Set the decay mode. Default decay mode: SLOW
 	// input:
 	//   decayMode: new decay mode. Values are
 	//              drv8833DecaySlow - good torque, high power consumption
