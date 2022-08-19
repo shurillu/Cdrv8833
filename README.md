@@ -10,8 +10,6 @@ Cdrv883 is a wrapper class for using boards based on DRV8833 H-bridge from Texas
 
 ### Simple usage
 See the drv8833Tester example provided in the [examples folder](https://github.com/shurillu/Cdrv8833/tree/main/examples/drv8833Tester).
-<img src="https://github.com/shurillu/Cdrv8833/blob/5ddc4eedec45fadf2c95102fb052b47815c22f8c/images/circuitExample.png" alt="Circuit Example" width="600"/>
-
 
 ### Changelog
 + 1.0.0 Initial version.
