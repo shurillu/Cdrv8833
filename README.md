@@ -12,6 +12,7 @@ Cdrv883 is a wrapper class for using modules based on DRV8833 H-bridge from Texa
 See the drv8833Tester example provided in the [examples folder](https://github.com/shurillu/Cdrv8833/tree/main/examples/drv8833Tester).
 
 ### Changelog
++ 1.0.1 Class file names updated.
 + 1.0.0 Initial version.
 
 <hr>
