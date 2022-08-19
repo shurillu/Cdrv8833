@@ -20,8 +20,7 @@ See the drv8833Tester example provided in the [examples folder](https://github.c
 
 #### `Cdrv8833()`
 Default constructor. The object is NOT initialized: the init member function must be called. Decay mode is set to SLOW.
-<br><br><br>
-
+<br><br>
 
 #### `Cdrv8833(uint8_t in1Pin, uint8_t in2Pin, uint8_t channel, bool swapDirection = false)`
 Specialized constructor. Decay mode is set to SLOW.
@@ -35,8 +34,7 @@ There are 16 independent channels for PWM modulation inside the ESP32 SOC. Every
 Swapping the motor rotation direction is useful (for example):
 + wrong cabling
 + using two motors to drive a two wheels vehicle (left wheel, right wheel). 
-<br>
-
+<br><br>
 
 #### `bool init(uint8_t in1Pin, uint8_t in2Pin, uint8_t channel, bool swapDirection = false)`
 Initialize the object. Decay mode is set to SLOW.
@@ -51,8 +49,7 @@ There are 16 independent channels for PWM modulation inside the ESP32 SOC. Every
 Swapping the motor rotation direction is useful (for example):
 + wrong cabling
 + using two motors to drive a two wheels vehicle (left wheel, right wheel). 
-<br>
-
+<br><br>
 
 #### `bool move(int8_t power)`
 Set motor rotation direction/speed.
@@ -62,20 +59,17 @@ Return `true` if no error occurs.
 
 The `power` parameter set the rotation speed and the direction. Negative values means reverse rotation direction. Value span to -100 (full speed reverse direction) to 100 (full speed forward direction).
 Zero stop the motor rotation.
-<br>
-
+<br><br>
 
 #### `bool stop()`
 Stop the motor, using fast decay mode.
 Return `true` if no error occurs.
-<br>
-
+<br><br>
 
 #### `bool brake()`
 Stop the motor, using slow decay mode.
 Return `true` if no error occurs.
-<br>
-
+<br><br>
 
 #### `void setDecayMode(drv8833DecayMode decayMode)`
 Set the decay mode. Default decay mode is set to SLOW.
@@ -83,15 +77,13 @@ input:
 + `decayMode`: new decay mode. Values are
   + `drv8833DecaySlow` good torque, but high power consumption
   + `drv8833DecayFast` poor torque, but low power consumption
-<br>
-
+<br><br>
 
 #### `void setFrequency(uint32_t frequency)`
 Set the frequency used for the PWM modulation(for ESP32 ledc functions). Default value is 5000Hz. Allowed values are 1Hz..50000Hz.
 input:
 + `frequency`: new frequency in Hertz. 1..50000Hz
-<br>
-
+<br><br>
 
 #### `void swapDirection(bool swapDirection)`
 Swap the motor rotation direction.
