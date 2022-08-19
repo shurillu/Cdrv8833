@@ -40,6 +40,7 @@ Swapping the motor rotation direction is useful (for example):
 
 #### `bool init(uint8_t in1Pin, uint8_t in2Pin, uint8_t channel, bool swapDirection = false)`
 Initialize the object. Decay mode is set to SLOW.
+
 input:
 + `in1Pin`: DRV8833 AIN1/BIN1
 + `in2Pin`: DRV8833 AIN2/BIN2
