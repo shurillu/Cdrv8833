@@ -20,7 +20,7 @@ See the drv8833Tester example provided in the [examples folder](https://github.c
 
 #### `Cdrv8833()`
 Default constructor. The object is NOT initialized: the init member function must be called. Decay mode is set to SLOW.
-<br>
+<br><br><br>
 
 
 #### `Cdrv8833(uint8_t in1Pin, uint8_t in2Pin, uint8_t channel, bool swapDirection = false)`
