@@ -1,6 +1,6 @@
 {
   "name": "Cdrv8833",
-  "keywords": "DRV8833, motor driver, ESP32",
+  "keywords": "DRV8833, motor driver, ESP32, h-bridge",
   "description": "ESP32 class for the TI DRV8833 motor driver. Designed for unipolar (DC) motors only (not stepper).",
   "homepage": "https://github.com/shurillu/Cdrv8833",
   "repository": {
