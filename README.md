@@ -1,6 +1,6 @@
 # Cdrv8833
 
-Branch: v3.0.0 - [![Build Status](https://travis-ci.org/shurillu/CTBot.svg?branch=v3.0.0)](https://travis-ci.org/shurillu/CTBot)
+<img src="https://raw.githubusercontent.com/shurillu/Cdrv8833/images/DRV8833.jpg" alt="DRV8833" width="180"/>
 
 ### Introduction
 Cdrv883 is a wrapper class for using boards based on DRV8833 H-bridge from Texas Instruments.
