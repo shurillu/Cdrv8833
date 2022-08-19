@@ -11,6 +11,11 @@ Cdrv883 is a wrapper class for using modules based on DRV8833 H-bridge from Texa
 ### Simple usage
 See the drv8833Tester example provided in the [examples folder](https://github.com/shurillu/Cdrv8833/tree/main/examples/drv8833Tester).
 
+### Changelog
++ 1.0.0 Initial version.
+
+<br>
+
 ### Reference
 
 #### `Cdrv8833()`
@@ -64,8 +69,8 @@ Return `true` if no error occurs.
 Set the decay mode. Default decay mode is set to SLOW.
 input:
 + `decayMode`: new decay mode. Values are
-++ `drv8833DecaySlow` good torque, but high power consumption
-++ `drv8833DecayFast` poor torque, but low power consumption
+  + `drv8833DecaySlow` good torque, but high power consumption
+  + `drv8833DecayFast` poor torque, but low power consumption
 
 #### `void setFrequency(uint32_t frequency)`
 Set the frequency used for the PWM modulation(for ESP32 ledc functions). Default value is 5000Hz. Allowed values are 1Hz..50000Hz.
@@ -77,8 +82,8 @@ Swap the motor rotation direction.
 Useful for wrong cabling / driving two opposite motors (left wheel and right wheel of a vehicle)
 input:
 + `swapDirection`: swap/unswap the motor rotation direction 
-++ `true`: swap rotation direction 
-++ `false`: default rotation direction
+  + `true`: swap rotation direction 
+  + `false`: default rotation direction
 
 ### Changelog
 + 1.0.0 Initial version.
