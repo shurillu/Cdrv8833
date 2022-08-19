@@ -15,7 +15,7 @@
                 - use the serial console to send commands
 */
 
-#include "drv8833.h"
+#include "Cdrv8833.h"
 
 #define IN1_PIN    12 // in1 pin from one of the two DRV8833 H-bridge
 #define IN2_PIN    13 // in2 pin from one of the two DRV8833 H-bridge
