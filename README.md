@@ -22,6 +22,7 @@ See the drv8833Tester example provided in the [examples folder](https://github.c
 Default constructor. The object is NOT initialized: the init member function must be called. Decay mode is set to SLOW.
 <br>
 
+
 #### `Cdrv8833(uint8_t in1Pin, uint8_t in2Pin, uint8_t channel, bool swapDirection = false)`
 Specialized constructor. Decay mode is set to SLOW.
 input:
@@ -35,6 +36,8 @@ Swapping the motor rotation direction is useful (for example):
 + wrong cabling
 + using two motors to drive a two wheels vehicle (left wheel, right wheel). 
 <br>
+
+
 #### `bool init(uint8_t in1Pin, uint8_t in2Pin, uint8_t channel, bool swapDirection = false)`
 Initialize the object. Decay mode is set to SLOW.
 input:
@@ -50,6 +53,7 @@ Swapping the motor rotation direction is useful (for example):
 + using two motors to drive a two wheels vehicle (left wheel, right wheel). 
 <br>
 
+
 #### `bool move(int8_t power)`
 Set motor rotation direction/speed.
 input:
@@ -60,15 +64,18 @@ The `power` parameter set the rotation speed and the direction. Negative values 
 Zero stop the motor rotation.
 <br>
 
+
 #### `bool stop()`
 Stop the motor, using fast decay mode.
 Return `true` if no error occurs.
 <br>
 
+
 #### `bool brake()`
 Stop the motor, using slow decay mode.
 Return `true` if no error occurs.
 <br>
+
 
 #### `void setDecayMode(drv8833DecayMode decayMode)`
 Set the decay mode. Default decay mode is set to SLOW.
@@ -78,11 +85,13 @@ input:
   + `drv8833DecayFast` poor torque, but low power consumption
 <br>
 
+
 #### `void setFrequency(uint32_t frequency)`
 Set the frequency used for the PWM modulation(for ESP32 ledc functions). Default value is 5000Hz. Allowed values are 1Hz..50000Hz.
 input:
 + `frequency`: new frequency in Hertz. 1..50000Hz
 <br>
+
 
 #### `void swapDirection(bool swapDirection)`
 Swap the motor rotation direction.
