@@ -1,0 +1,14 @@
+Cdrv8833	KEYWORD1
+
+init	KEYWORD2
+move	KEYWORD2
+stop	KEYWORD2
+brake	KEYWORD2
+setDecayMode	KEYWORD2
+setFrequency	KEYWORD2
+swapDirection	KEYWORD2
+
+drv8833DecayMode	KEYWORD3
+
+drv8833DecaySlow	LITERAL1
+drv8833DecayFast	LITERAL1

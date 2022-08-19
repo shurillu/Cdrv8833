@@ -1,0 +1,19 @@
+{
+  "name": "Cdrv8833",
+  "keywords": "DRV8833, motor driver, ESP32",
+  "description": "ESP32 class for the TI DRV8833 motor driver. Designed for unipolar (DC) motors only (not stepper).",
+  "homepage": "https://github.com/shurillu/Cdrv8833",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shurillu/Cdrv8833.git"
+  },
+  "version": "1.0.0",
+  "authors": {
+    "name": "Stefano Ledda",
+    "email": "shurillu@tiscalinet.it"
+  },
+  "frameworks": "arduino",
+  "platforms": "esp32",
+  "dependencies": {
+  }
+}
